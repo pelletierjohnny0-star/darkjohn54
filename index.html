@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Carte du Duelliste</title>
+</head>
+<body style="background:black;color:white;text-align:center;font-family:Arial;">
+<h1>🃏 Carte du Duelliste</h1>
+
+<div id="viewer"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const user = params.get("user") || "Viewer";
+
+document.getElementById("viewer").innerHTML =
+"<h2>" + user + "</h2><p>⭐ Rang : Débutant</p>";
+</script>
+
+</body>
+</html>
